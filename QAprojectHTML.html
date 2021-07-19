@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="QAprojectCSS.css">
+</head>
+<br>
+
+<form>
+    <div class="header">
+        <h1 style=color:white;><strong>QA EMPLOYEE RECORDS</h1></strong>
+    </div>
+</form>
+<form>
+    <label>
+        <h2 style=color:white;>Add New Employee To Records:</h2>
+    </label>
+</form>
+<form>
+    <h3 style="color:white;">N.I Number:</h3><input type="text" id="NationalInsurance"><span id="error0"
+        style=visibility:hidden;color:red>Field Required</span>
+    <h3 style="color:white">Full Name:</h3><input type="text" id="FullName"><span id="error1"
+        style=visibility:hidden;color:red>Field Required</span>
+    <h3 style="color:white;">Phone Number:</h3><input type="text" id="PhoneNumber"><span id="error2"
+        style=visibility:hidden;color:red>Field Required</span>
+    <h3 style="color:white;">Address:</h3><input type="text" id="Address"><span id="error3"
+        style=visibility:hidden;color:red>Field Required</span>
+    <h3 style="color:white;">Department:</h3>
+    <select id="department">
+        <option value="HR">HR department</option>
+        <option value="IT">IT department</option>
+        <option value="Sales">Sales department</option>
+    </select><span id="error4" style=visibility:hidden;color:red>Field Required</span><br>
+    <br>
+</form>
+<form>
+
+    <input type="Button" value="Show Records" onclick="showRecords(true)">
+    <input type="Button" value="Add Record" onclick="addRecord()"><br>
+
+    <br>
+    <h2>
+        <div class="ex2">Filter Department:</div>
+    </h2>
+
+    <select id="FilterDepartment">
+        <option value="HR">HR department</option>
+        <option value="IT">IT department</option>
+        <option value="Sales">Sales department</option>
+    </select>
+    <input type="Button" value="Select" onclick="FilterRecords(false)"><br>
+    <br><br>
+
+    <br>
+    <br>
+</form>
+<script type="text/javascript" src="QArecordsJS.js"></script>
+<script type="text/javascript" src="QAprojectJS.js"></script>
+
+</html>
